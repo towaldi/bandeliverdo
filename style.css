@@ -1,0 +1,534 @@
+/* ==========================================================================
+   Reset all
+========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dt-bg-dark);
+}
+
+/* ==========================================================================
+   Container + elements
+========================================================================== */
+.navbar {
+    /* Positioning */
+    z-index: 1;
+
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 48px;
+
+    /* Other */
+    background-color: rgb(34, 34, 34);
+    border-bottom: 1px solid var(--dt-outline);
+}
+
+.navbar-logo {
+    /* Display & box model */
+    height: 32px;
+}
+
+/* Content
+ ========================================================================== */
+.content-column {
+    /* Positioning */
+    z-index: 0;
+
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-row {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-right {
+    /* Positioning */
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+
+    /* Other */
+    border-left: 1px solid var(--dt-outline);
+}
+
+/* Banner
+ ========================================================================== */
+.banner {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* Other */
+    border-bottom: 1px solid var(--dt-outline);
+}
+
+.banner-img {
+    /* Display & box model */
+    height: 420px;
+    width: 100%;
+
+    /* Other */
+    object-fit: cover;
+}
+
+.banner-header {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.banner-header-icons {
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.banner-rating {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.banner-details, .b-d-single-element {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.banner-details {
+    /* Display & box model */
+    padding: 0 16px;
+}
+
+.b-d-single-element {
+    /* Display & box model */
+    gap: 8px; 
+}
+
+
+/* Chips
+ ========================================================================== */
+.banner-chips {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px 16px;
+    gap: 16px;
+}
+
+.chip {
+    /* Display & box model */
+    padding: 4px 16px;
+    /* Other */
+    background-color: var(--dt-bg-dark-e6);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.chip:hover {
+    background-color: var(--dt-bg-dark-e24);
+}
+
+
+/* Dishes
+ ========================================================================== */
+.dishes-list-container {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+
+.dish-card {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    /* Other */
+    border: 1px solid var(--dt-outline);
+    border-radius: 8px;
+
+}
+
+.dish-header {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.dish-img-h {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.dish-details {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+
+    /* Other */
+    border-top: 1px solid var(--dt-outline);
+}
+
+
+/* Shopping basket
+ ========================================================================== */
+.shopping-basket {
+    /* Display & box model */
+    width: 100%;
+}
+
+.shopping-basket-container {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    /* Other */
+}
+
+.shopped-dish-card {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    /* Other */
+    border: 1px solid var(--dt-outline);
+    border-radius: 8px;
+}
+
+.shopped-dish-card-header, .shopped-dish-card-detail {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.shopped-dishes-cost {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+
+    /* Other */
+    /*border-top: 1px solid var(--dt-outline);*/
+}
+
+.shopped-dishes-cost-subtotal, .shopped-dishes-cost-delivery {
+    /* Display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-right: 112px;
+
+}
+
+
+/* Footer
+ ========================================================================== */
+footer {
+    /* Positioning & box model */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    /* Other */
+    border-top: 1px solid var(--dt-outline);
+}
+
+.footer-links {
+    /* Positioning & box model */
+    display: flex;
+    gap: 16px;
+}
+
+
+/* General
+ ========================================================================== */
+.bg-dark {
+    /* Other */ 
+    background-color: var(--dt-bg-dark-e1);
+}
+
+.btn {
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 100%;
+    
+    /* Other */
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* Other */
+    transition: ease-in-out 0.1s;
+    background-color: var(--yellow-hover);
+}
+
+.dish-img, .dish-img-basket {
+    /* Display & box model */
+    height: 48px;
+    width: 48px;
+
+    /* Other */
+    border-radius: 48px;
+    object-fit: cover;
+}
+
+.dish-img-basket {
+    /* Display & box model */
+    height: 36px;
+    width: 36px;
+}
+
+.icon-36x36 {
+    /* Display & box model */
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+
+    /* Other */
+    border-radius: 32px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.icon-36x36:hover {
+    /* Other */
+    background-color: var(--dt-bg-dark-e6);
+}
+
+.sticky {
+    /* Positioning */
+    position: sticky;
+    top: 0px;
+}
+
+.bottom-space {
+    /* Display & box model */
+    margin-bottom: 16px;
+}
+
+
+/* font
+========================================================================== */
+h1, h2, h6,  p, a{
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--dt-text-primary);
+}
+   
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    font-weight: 100;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+
+.secondary {
+    color: var(--dt-text-secondary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   Responsive behavior
+========================================================================== */
+@media screen and (max-width: 960px){
+    .content-row {
+        /* Display & box model */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-right {
+        /* Positioning */
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        
+        /* Display & box model */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    
+        /* Other */
+        background-color: rgb(45, 45, 45);
+        border: none;
+        border-top: 1px solid var(--dt-outline);
+    }
+
+    .sticky {
+        /* Positioning */
+        position: sticky;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .banner-details {
+        /* Display & box model */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner-chips {
+        /* Display & box model */
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .dishes-list-container {
+        /* Display & box model */
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+/* ==========================================================================
+   Implementation - color
+========================================================================== */
+:root {
+    /* Background */
+    --dt-bg-dark: rgba(18, 18, 18, 1);
+    /* Background paper elevation */
+    --dt-bg-dark-e1: rgba(255, 255, 255, 0.05);
+    --dt-bg-dark-e6: rgba(255, 255, 255, 0.11);
+    --dt-bg-dark-e24: rgba(255, 255, 255, 0.16);
+    /* Divider */
+
+    /* Outline border */
+    --dt-outline: rgba(255, 255, 255, 0.23);
+
+    /* Text */
+    --dt-text-primary: rgba(255, 255, 255, 1);
+    --dt-text-secondary: rgba(255, 255, 255, 0.6);
+
+    /* Yellow */
+    --yellow: rgba(252, 210, 1, 1);
+    --yellow-hover: rgb(195, 156, 0);
+}
+
+
+
+/* ==========================================================================
+   Implementation - font
+========================================================================== */
+/* Thin */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Thin.woff) format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Bold.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+}

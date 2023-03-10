@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link JS -->
+    <script src="script.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon_bandeliverdo.svg" type="image/x-icon">
+
+    <title>Bandeliverdo</title>
+</head>
+<body onload="renderDishes()">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img class="navbar-logo" src="./img/logo_bandeliverdo.svg" alt="Bandeliverdo">
+        <div class="navbar-icons">
+            <img class="icon-36x36" src="./img/menu_FILL0_24px_white.svg" alt="Menu">
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content-column">
+        <div class="content-row">
+            <!-- Content left -->
+            <div class="content-left">
+                <!-- Banner -->
+                <div class="banner bg-dark">
+                    <img class="banner-img" src="./img/banana_banner_2.jpg" alt="Banana banner">
+                    <!-- Banner header -->
+                    <div class="banner-header">
+                        <h1>Bob's Banana Restaurant</h1>
+                        <div class="banner-header-icons">
+                            <img class="icon-36x36" src="./img/info_FILL0_24px_white.svg" alt="Info">
+                            <img class="icon-36x36" src="./img/favorite_FILL0_24px_white.svg" alt="Favorite">
+                        </div>
+                    </div>
+                    <!-- Banner rating -->
+                    <div class="banner-rating">
+                        <div class="banner-stars">
+                            <img src="./img/star_FILL1_20px.svg" alt="Star">
+                            <img src="./img/star_FILL1_20px.svg" alt="Star">
+                            <img src="./img/star_FILL1_20px.svg" alt="Star">
+                            <img src="./img/star_half_20px.svg" alt="Star">
+                            <img src="./img/star_FILL0_20px.svg" alt="Star">
+                        </div>
+                        <a href="#">2.5k reviewed</a>
+                    </div>
+                    <!-- Banner detail -->
+                    <div class="banner-details">
+                        <div class="b-d-single-element">
+                            <img src="./img/schedule_FILL0_20px_white.svg" alt="Clock">
+                            <p>form 4:00 pm</p>
+                        </div>
+                        <div class="b-d-single-element">
+                            <img src="./img/pedal_bike_FILL0_20px_white.svg" alt="Bike">
+                            <p>0.99 €</p>
+                        </div>
+                        <div class="b-d-single-element">
+                            <img src="./img/shopping_bag_FILL0_20px_white.svg" alt="Shopping bag">
+                            <p>form 4:00 pm</p>
+                        </div>
+                        <div class="b-d-single-element">
+                            <p>Free delivery form 45.00 €</p>
+                        </div>
+                    </div>
+                    <!-- Banner chips -->
+                    <div class="banner-chips">
+                        <div class="chip">
+                            <p>Popular</p>
+                        </div>
+                        <div class="chip">
+                            <p>Deals</p>
+                        </div>
+                        <div class="chip">
+                            <p>Deserts</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Dishes list -->
+                <div id="dishes" class="dishes-list-container">
+                </div>
+            </div>
+
+            <!-- Content right -->
+            <div class="content-right bg-dark">
+                <div class="shopping-basket sticky">
+                    <div id="shopping-basket" class="shopping-basket-container">
+                        <h2>Basket</h2>
+                        <img class="icon-36x36" src="./img/shopping_bag_FILL0_24px_white.svg" alt="Shopping bag">
+                        <h6>Fill your basket</h6>
+                        <p class="bottom-space">Your basket is empty</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark">
+            <div class="footer-links">
+                <a href="#">Jobs</a>
+                <a href="#">AGB</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Impressum</a>
+                <a href="#">Cookies</a>
+            </div>
+            <div class="footer-copyright">
+                <a>© 2023 Bandeliverdo.de</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
